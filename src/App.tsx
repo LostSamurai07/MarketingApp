@@ -61,11 +61,11 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            AI-Powered Marketing Strategy Generator
+            Marketing Strategy Generator Powered By Cultural Intelligence
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Transform your marketing approach with AI-driven insights based on cultural intelligence. 
-            Get personalized strategies, content calendars, and actionable recommendations for your startup or small business.
+            Get personalized strategies, content calendars, viral post generators and actionable recommendations to build up your business!
           </p>
         </div>
 
