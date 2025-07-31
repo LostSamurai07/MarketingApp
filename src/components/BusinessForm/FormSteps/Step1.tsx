@@ -16,13 +16,13 @@ export const Step1: React.FC<Step1Props> = ({ formData, updateFormData }) => {
   return (
     <div className="space-y-6">
       <div>
-        <label htmlFor="productDescription" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="productDescription" className="block text-sm font-medium text-gray-200 mb-2">
           Product/Service Description *
         </label>
         <textarea
           id="productDescription"
           rows={4}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-dark-green-500 focus:border-transparent transition-all duration-200"
           placeholder="Describe what your business offers, who it's for, and what makes it unique..."
           value={formData.productDescription}
           onChange={(e) => updateFormData({ productDescription: e.target.value })}
@@ -31,12 +31,12 @@ export const Step1: React.FC<Step1Props> = ({ formData, updateFormData }) => {
       </div>
 
       <div>
-        <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="industry" className="block text-sm font-medium text-gray-200 mb-2">
           Industry *
         </label>
         <select
           id="industry"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-dark-green-500 focus:border-transparent transition-all duration-200"
           value={formData.industry}
           onChange={(e) => updateFormData({ industry: e.target.value })}
           required
@@ -51,7 +51,7 @@ export const Step1: React.FC<Step1Props> = ({ formData, updateFormData }) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-gray-200 mb-2">
           Current Marketing Channels
         </label>
         <div className="grid grid-cols-2 gap-3">
@@ -59,7 +59,7 @@ export const Step1: React.FC<Step1Props> = ({ formData, updateFormData }) => {
             <label key={channel} className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="checkbox"
-                className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                className="rounded border-gray-600 bg-gray-700 text-dark-green-600 focus:ring-dark-green-500"
                 checked={formData.currentMarketing.includes(channel)}
                 onChange={(e) => {
                   if (e.target.checked) {
@@ -71,7 +71,7 @@ export const Step1: React.FC<Step1Props> = ({ formData, updateFormData }) => {
                   }
                 }}
               />
-              <span className="text-sm text-gray-700">{channel}</span>
+              <span className="text-sm text-gray-300">{channel}</span>
             </label>
           ))}
         </div>
