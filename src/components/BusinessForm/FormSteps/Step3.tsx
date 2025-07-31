@@ -42,12 +42,12 @@ export const Step3: React.FC<Step3Props> = ({ formData, updateFormData }) => {
   return (
     <div className="space-y-6">
       <div>
-        <label htmlFor="budget" className="block text-sm font-medium text-gray-200 mb-2">
+        <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
           Marketing Budget Range
         </label>
         <select
           id="budget"
-          className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-dark-green-500 focus:border-transparent transition-all duration-200"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
           value={formData.budget}
           onChange={(e) => updateFormData({ budget: e.target.value })}
         >
@@ -59,7 +59,7 @@ export const Step3: React.FC<Step3Props> = ({ formData, updateFormData }) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-200 mb-3">
+        <label className="block text-sm font-medium text-gray-700 mb-3">
           Primary Marketing Goals (Select all that apply)
         </label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -71,8 +71,8 @@ export const Step3: React.FC<Step3Props> = ({ formData, updateFormData }) => {
               className={`
                 px-4 py-3 text-sm text-left rounded-lg border transition-all duration-200
                 ${formData.goals.includes(goal)
-                  ? 'bg-dark-green-600 text-white border-dark-green-600 shadow-md'
-                  : 'bg-gray-700 text-gray-300 border-gray-600 hover:border-dark-green-500 hover:bg-dark-green-900'
+                  ? 'bg-blue-500 text-white border-blue-500 shadow-md'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:bg-blue-50'
                 }
               `}
             >
@@ -82,9 +82,9 @@ export const Step3: React.FC<Step3Props> = ({ formData, updateFormData }) => {
         </div>
       </div>
 
-      <div className="bg-dark-green-900 border border-dark-green-700 rounded-lg p-4">
-        <h3 className="text-lg font-semibold text-dark-green-400 mb-2">Ready to Generate Your Strategy?</h3>
-        <p className="text-dark-green-300 text-sm">
+      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <h3 className="text-lg font-semibold text-blue-900 mb-2">Ready to Generate Your Strategy?</h3>
+        <p className="text-blue-700 text-sm">
           We'll analyze your business information using advanced AI and cultural intelligence to create 
           a personalized marketing strategy with actionable recommendations, content calendars, and growth tactics.
         </p>

@@ -20,9 +20,9 @@ export const StepIndicator: React.FC<StepIndicatorProps> = ({ currentStep, total
             <div key={step} className="flex items-center">
               <div className={`
                 flex items-center justify-center w-10 h-10 rounded-full border-2 transition-all duration-200
-                ${isCompleted ? 'bg-dark-green-600 border-dark-green-600 text-white' : 
-                  isCurrent ? 'bg-dark-green-500 border-dark-green-500 text-white' : 
-                  'bg-gray-700 border-gray-600 text-gray-400'}
+                ${isCompleted ? 'bg-green-500 border-green-500 text-white' : 
+                  isCurrent ? 'bg-blue-500 border-blue-500 text-white' : 
+                  'bg-white border-gray-300 text-gray-500'}
               `}>
                 {isCompleted ? (
                   <Check className="w-5 h-5" />
@@ -34,7 +34,7 @@ export const StepIndicator: React.FC<StepIndicatorProps> = ({ currentStep, total
               {index < steps.length - 1 && (
                 <div className={`
                   h-0.5 w-16 mx-4 transition-all duration-200
-                  ${isCompleted ? 'bg-dark-green-600' : 'bg-gray-600'}
+                  ${isCompleted ? 'bg-green-500' : 'bg-gray-300'}
                 `} />
               )}
             </div>
@@ -43,8 +43,8 @@ export const StepIndicator: React.FC<StepIndicatorProps> = ({ currentStep, total
       </div>
       
       <div className="mt-4 text-center">
-        <h2 className="text-2xl font-bold text-white">{steps[currentStep - 1]}</h2>
-        <p className="text-gray-300 mt-2">
+        <h2 className="text-2xl font-bold text-gray-900">{steps[currentStep - 1]}</h2>
+        <p className="text-gray-600 mt-2">
           {currentStep === 1 && "Tell us about your business and what you're offering"}
           {currentStep === 2 && "Help us understand your target audience"}
           {currentStep === 3 && "What are your marketing goals and current efforts?"}

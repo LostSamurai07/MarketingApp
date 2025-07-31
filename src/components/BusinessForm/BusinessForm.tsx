@@ -80,7 +80,7 @@ export const BusinessForm: React.FC<BusinessFormProps> = ({ onSubmit }) => {
 
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="bg-gray-800 rounded-2xl shadow-xl border border-gray-700 p-8">
+      <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8">
         <StepIndicator 
           currentStep={currentStep} 
           totalSteps={steps.length} 
@@ -98,8 +98,8 @@ export const BusinessForm: React.FC<BusinessFormProps> = ({ onSubmit }) => {
             className={`
               flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-200
               ${currentStep === 1 
-                ? 'text-gray-500 cursor-not-allowed' 
-                : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                ? 'text-gray-400 cursor-not-allowed' 
+                : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
               }
             `}
           >
@@ -114,8 +114,8 @@ export const BusinessForm: React.FC<BusinessFormProps> = ({ onSubmit }) => {
               className={`
                 flex items-center space-x-2 px-8 py-3 rounded-lg font-medium transition-all duration-200
                 ${canProceed()
-                  ? 'bg-gradient-to-r from-dark-green-600 to-dark-green-800 text-white hover:from-dark-green-700 hover:to-dark-green-900 shadow-lg hover:shadow-xl'
-                  : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 shadow-lg hover:shadow-xl'
+                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }
               `}
             >
@@ -129,8 +129,8 @@ export const BusinessForm: React.FC<BusinessFormProps> = ({ onSubmit }) => {
               className={`
                 px-8 py-3 rounded-lg font-medium transition-all duration-200
                 ${canProceed()
-                  ? 'bg-gradient-to-r from-dark-green-500 to-dark-green-700 text-white hover:from-dark-green-600 hover:to-dark-green-800 shadow-lg hover:shadow-xl'
-                  : 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                  ? 'bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 shadow-lg hover:shadow-xl'
+                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }
               `}
             >
