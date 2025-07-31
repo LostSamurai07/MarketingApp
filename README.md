@@ -31,7 +31,7 @@ A comprehensive web application that helps startups and small businesses create 
 3. Generate a new API key
 4. Copy the key for use in your `.env` file
 
-**Qloo API Key (Optional):**
+**Qloo API Key :**
 1. Visit [Qloo Developers](https://www.qloo.com/developers)
 2. Sign up for an account
 3. Request API access
