@@ -16,7 +16,7 @@ A comprehensive web application that helps startups and small businesses create 
 - Creates comprehensive marketing strategies with actionable recommendations
 - Produces platform-specific content calendars and ad scripts
 
-### Qloo API (Optional)
+### Qloo API 
 - Provides cultural intelligence data for enhanced audience analysis
 - Maps cultural preferences to optimal marketing channels
 - Identifies trending content formats relevant to target demographics
