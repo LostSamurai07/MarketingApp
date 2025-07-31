@@ -16,8 +16,8 @@ export const Header: React.FC<HeaderProps> = ({ currentStep, totalSteps }) => {
               <Sparkles className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">MarketingAI</h1>
-              <p className="text-sm text-gray-500">Powered by Cultural Intelligence</p>
+              <h1 className="text-xl font-bold text-gray-900">Marketly</h1>
+              <p className="text-sm text-gray-500">Understand Your Audience Better Than Ever Before</p>
             </div>
           </div>
           
