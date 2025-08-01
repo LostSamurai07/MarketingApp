@@ -56,7 +56,7 @@ npm run dev
 
 1. **Business Information Collection**: Users fill out a multi-step form with their business details, target audience, and marketing goals.
 
-2. **Cultural Analysis**: The system analyzes the target audience using either Qloo's cultural intelligence API or GPT-4 to generate detailed taste profiles.
+2. **Cultural Analysis**: The system analyzes the target audience using  Qloo's cultural intelligence API and GPT-4 to generate detailed taste profiles.
 
 3. **Strategy Generation**: GPT-4 creates comprehensive marketing strategies including:
    - Brand messaging and taglines
