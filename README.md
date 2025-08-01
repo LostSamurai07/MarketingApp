@@ -72,11 +72,9 @@ npm run dev
 ### OpenAI Integration
 - Uses GPT-4 for both cultural analysis and strategy generation
 - Implements structured prompts for consistent, actionable output
-- Includes error handling and fallback to mock data
 
 ### Qloo Integration
-- Provides enhanced cultural intelligence when available
-- Falls back to AI-generated insights if Qloo is unavailable
+- Provides enhanced cultural intelligence 
 - Maps cultural data to marketing recommendations
 
 ## Security Notes
@@ -86,12 +84,6 @@ npm run dev
 - In production, consider moving API calls to a secure backend
 - Never commit API keys to version control
 
-## Fallback Behavior
-
-The application includes robust fallback mechanisms:
-- If OpenAI is unavailable, uses industry-specific mock data
-- If Qloo is unavailable, uses GPT-4 for cultural analysis
-- Graceful error handling with user-friendly messages
 
 ## Technologies Used
 
